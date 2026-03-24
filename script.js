@@ -159,7 +159,7 @@ const projects = [
     tags: ["Marketing", "Redes Sociais"],
     image: "lp-sr-marketing.png",
     link: "https://o-dynn.github.io/lp-sr-marketing/",
-    repo: "https://o-dynn.github.io/lp-sr-marketing/"
+    repo: "https://github.com/O-dynn/lp-sr-marketing"
   },
   {
     title: "Donna Amora - Universo Digital da Marca",
@@ -170,7 +170,7 @@ const projects = [
     tags: ["Marketing","Construção de Marca"],
     image: "lp-donna-amora.png",
     link: "https://o-dynn.github.io/lp-Donna-Amora/",
-    repo: "https://o-dynn.github.io/lp-Donna-Amora/"
+    repo: "https://github.com/O-dynn/lp-Donna-Amora"
   },
   {
     title: "MonaFeed - Criação de <br> E-book Estratégico",
@@ -181,7 +181,7 @@ const projects = [
     tags: ["E-book", "Página de Venda"],
     image: "mona-feed-ebook.png",
     link: "https://o-dynn.github.io/MonaFeed-ebook/",
-    repo: "https://o-dynn.github.io/MonaFeed-ebook/"
+    repo: "https://github.com/O-dynn/MonaFeed-ebook"
   },
   {
     title: "El Niño Sirena - Direção de Arte para Audiobook",
@@ -192,7 +192,7 @@ const projects = [
     tags: ["Design Editorial", "Narrativa Visual"],
     image: "lp-el-nino-sirena.png",
     link: "https://o-dynn.github.io/lp-el-nino-sirena/",
-    repo: "https://o-dynn.github.io/lp-el-nino-sirena/"
+    repo: "https://github.com/O-dynn/lp-el-nino-sirena"
   },
   {
     title: "Brisa Café — Website de Cafeteria Artesanal",
