@@ -3678,3 +3678,773 @@ summary:focus-visible {
     font-size: .62rem;
   }
 }
+
+
+/* ========================================================= */
+/* POLIMENTO MOBILE FINAL — PORTFÓLIO 100% RESPONSIVO */
+/* ========================================================= */
+
+@media (max-width: 820px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
+
+  .container,
+  .contact-section .container,
+  .professional-section .container,
+  .presence-section .container {
+    width: min(100% - 28px, var(--max));
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .section-head {
+    margin-bottom: 30px;
+  }
+
+  .eyebrow {
+    margin-bottom: 12px;
+    font-size: .74rem;
+    letter-spacing: .1em;
+  }
+
+  .line-icon {
+    margin-right: 6px;
+    font-size: 1.05em;
+  }
+
+  .section-title,
+  .contact-intro .section-title,
+  .presence-copy .section-title,
+  .pro-card .section-title {
+    max-width: 100%;
+    font-size: clamp(2.05rem, 10vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -.055em;
+  }
+
+  .section-subtitle,
+  .contact-intro .section-subtitle,
+  .presence-copy .section-subtitle,
+  .pro-card .section-subtitle {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  /* NAVBAR */
+  .site-header {
+    min-height: auto;
+  }
+
+  .navbar {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    min-height: 72px;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 1.08rem;
+  }
+
+  .theme-toggle,
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    font-size: 1.15rem;
+  }
+
+  .nav-links {
+    top: 76px;
+    left: 14px;
+    right: 14px;
+    max-height: calc(100dvh - 96px);
+    overflow: auto;
+    padding: 10px;
+    border-radius: 16px;
+    background: rgba(6, 18, 38, .98);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, .36);
+  }
+
+  :root.light .nav-links {
+    background: rgba(255, 255, 255, .98);
+    box-shadow: 0 22px 50px rgba(7, 18, 38, .12);
+  }
+
+  .nav-links a,
+  .nav-links a:not(.hire) {
+    display: block;
+    padding: 12px 14px;
+    color: var(--text);
+    font-size: .95rem;
+  }
+
+  .nav-links .hire {
+    justify-content: center;
+    margin-top: 6px;
+    min-height: 46px;
+    padding: 0 18px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 42px 0 54px;
+    text-align: center;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .kicker {
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: .92rem;
+    line-height: 1.45;
+  }
+
+  .hero h1,
+  .hero-title {
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: clamp(2.12rem, 11.4vw, 3.25rem);
+    line-height: 1.09;
+    letter-spacing: -.055em;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    line-height: 1.56;
+  }
+
+  .trust {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .trust li,
+  .trust li:first-child,
+  .trust li:nth-child(2),
+  .trust li:nth-child(3) {
+    width: 100%;
+    min-width: 0;
+    padding: 11px 14px;
+    color: var(--text);
+    font-size: .88rem;
+  }
+
+  :root.light .trust li {
+    background: rgba(7, 18, 38, .035);
+    border-color: rgba(7, 18, 38, .14);
+  }
+
+  .hero-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .hero-cta .btn,
+  .hero-cta .btn.ghost {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 12px;
+    font-size: .9rem;
+  }
+
+  .hero-frame {
+    width: min(100%, 360px);
+    margin-inline: auto;
+    padding: 9px;
+    border-radius: 22px;
+  }
+
+  .hero-frame img {
+    border-radius: 15px;
+  }
+
+  /* ATUAÇÃO PROFISSIONAL */
+  .professional-section {
+    padding: 50px 0;
+  }
+
+  .pro-card {
+    padding: 28px 16px 18px;
+    border-radius: 20px;
+  }
+
+  .pro-card .section-head.centered {
+    margin-bottom: 24px;
+  }
+
+  .pro-card .eyebrow .line-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 1.55rem;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .step-card {
+    min-height: auto;
+    padding: 20px 18px;
+    border-radius: 15px;
+  }
+
+  .step-top {
+    display: grid;
+    grid-template-columns: 46px 58px;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .step-top strong {
+    font-size: 1.55rem;
+  }
+
+  .step-top span {
+    width: 58px;
+    height: 58px;
+    font-size: 1.45rem;
+  }
+
+  .step-card h3 {
+    min-height: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .step-card i {
+    width: 34px;
+    height: 3px;
+    margin-bottom: 14px;
+  }
+
+  .step-card p {
+    max-width: 100%;
+    font-size: .92rem;
+    line-height: 1.5;
+  }
+
+  /* ÁREAS */
+  .areas-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .area-card {
+    min-height: auto;
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  .area-top {
+    grid-template-columns: 58px 1fr;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+
+  .area-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    font-size: 1.55rem;
+  }
+
+  .area-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .area-call {
+    margin-bottom: 12px !important;
+    font-size: .98rem !important;
+  }
+
+  .area-card p {
+    font-size: .94rem;
+    line-height: 1.58;
+  }
+
+  /* FORMAÇÃO */
+  .cert-head {
+    gap: 18px;
+  }
+
+  .cert-controls {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .icon-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 11px;
+    font-size: 1.7rem;
+  }
+
+  .cert-track {
+    grid-auto-columns: minmax(260px, 84%);
+    gap: 14px;
+    padding-inline: 1px;
+  }
+
+  .cert-card {
+    min-height: 340px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .cert-thumb {
+    height: 145px;
+    margin-bottom: 18px;
+    padding: 10px;
+  }
+
+  .cert-provider {
+    font-size: .68rem;
+    line-height: 1.35;
+  }
+
+  .cert-card h3 {
+    margin: 10px 0 16px;
+    font-size: 1.05rem;
+  }
+
+  .dots {
+    margin-top: 16px;
+  }
+
+  /* PROJETOS */
+  .projects-section {
+    padding-top: 56px;
+  }
+
+  .filters {
+    gap: 8px;
+    margin: -10px 0 24px;
+    padding-bottom: 8px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chip {
+    flex: 0 0 auto;
+    padding: 9px 14px;
+    font-size: .78rem;
+    scroll-snap-align: start;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-card {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .project-content {
+    gap: 14px;
+    padding: 18px;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .tag {
+    padding: 6px 9px;
+    font-size: .66rem;
+  }
+
+  .project-content p {
+    font-size: .88rem;
+  }
+
+  .project-actions {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .project-actions .btn {
+    min-height: 46px;
+    padding: 0 10px;
+    font-size: .78rem;
+  }
+
+  .projects-more-wrap {
+    margin-top: 24px;
+  }
+
+  .projects-more-btn {
+    width: 100%;
+    max-width: 100%;
+    min-height: 52px;
+  }
+
+  /* FERRAMENTAS — 4 POR LINHA */
+  .tools-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .tool-pill {
+    min-width: 0;
+    min-height: 66px;
+    padding: 8px 4px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: .6rem;
+    line-height: 1.15;
+    letter-spacing: -.025em;
+    overflow-wrap: anywhere;
+  }
+
+  .tool-pill b {
+    font-size: .95rem;
+    line-height: 1;
+  }
+
+  /* PRESENÇA */
+  .presence-section {
+    min-height: auto;
+    padding: 58px 0;
+  }
+
+  .presence-wrap {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .presence-copy .section-subtitle {
+    margin-bottom: 22px;
+  }
+
+  .presence-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .presence-actions .btn {
+    width: 100%;
+    min-height: 50px;
+    font-size: .88rem;
+  }
+
+  .presence-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .presence-card {
+    min-width: 0;
+    min-height: 92px;
+    padding: 10px 4px 8px;
+    gap: 4px;
+    border-radius: 12px;
+  }
+
+  .presence-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .presence-icon svg {
+    width: 31px;
+    height: 31px;
+    stroke-width: 4;
+  }
+
+  .presence-icon-text {
+    font-size: 2rem;
+    line-height: .9;
+  }
+
+  .presence-card strong {
+    max-width: 100%;
+    font-size: .58rem;
+    line-height: 1.12;
+    letter-spacing: -.025em;
+    overflow-wrap: anywhere;
+  }
+
+  /* FAQ */
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .faq-grid summary {
+    grid-template-columns: 44px 1fr 16px;
+    gap: 12px;
+    padding: 18px 14px;
+    font-size: .95rem;
+  }
+
+  .faq-grid summary::before {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.45rem;
+  }
+
+  .faq-grid summary::after {
+    font-size: 1.2rem;
+  }
+
+  .faq-grid details p {
+    padding: 0 16px 20px 70px;
+    font-size: .9rem;
+    line-height: 1.55;
+  }
+
+  /* CONTATO */
+  .contact-section {
+    padding: 56px 0;
+  }
+
+  .contact-shell {
+    min-height: auto;
+    padding: 24px 16px;
+    gap: 24px;
+    border-radius: 20px;
+  }
+
+  .contact-intro {
+    padding-right: 0;
+  }
+
+  .contact-badges {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 24px 0 26px;
+  }
+
+  .contact-badges li {
+    min-height: 52px;
+    justify-content: flex-start;
+    padding: 0 14px;
+    white-space: normal;
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .quick-actions a {
+    grid-template-columns: 42px 1fr 14px;
+    min-height: 72px;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .quick-actions a > span {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .quick-actions a > span svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .quick-actions strong {
+    font-size: .88rem;
+  }
+
+  .quick-actions small {
+    font-size: .72rem;
+  }
+
+  .quick-actions b {
+    font-size: 1.4rem;
+  }
+
+  .secure-note {
+    margin-top: 24px;
+    font-size: .84rem;
+  }
+
+  .contact-form-wrap {
+    padding-top: 26px;
+  }
+
+  .form-title {
+    gap: 14px;
+    margin: 0 0 24px;
+  }
+
+  .form-title > span {
+    width: 54px;
+    height: 54px;
+  }
+
+  .form-title > span svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .form-title h3 {
+    font-size: 1.1rem;
+  }
+
+  .form-title p {
+    font-size: .86rem;
+  }
+
+  .contact-form {
+    gap: 18px;
+  }
+
+  .form-row,
+  .form-actions {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .field-wrap {
+    min-height: 58px;
+  }
+
+  .field-wrap i {
+    flex-basis: 54px;
+  }
+
+  .field-wrap i svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contact-form input {
+    height: 58px;
+  }
+
+  .textarea-wrap {
+    grid-template-columns: 54px 1fr;
+    min-height: 150px;
+  }
+
+  .contact-form textarea {
+    min-height: 150px;
+    padding-top: 20px;
+  }
+
+  .form-actions .btn {
+    min-height: 52px;
+    font-size: .9rem;
+  }
+
+  .form-note {
+    font-size: .84rem;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    padding: 22px 0;
+  }
+
+  .footer-simple {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    font-size: .78rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .container,
+  .contact-section .container,
+  .professional-section .container,
+  .presence-section .container {
+    width: min(100% - 22px, var(--max));
+  }
+
+  .hero h1,
+  .hero-title {
+    font-size: clamp(1.92rem, 11.2vw, 2.75rem);
+  }
+
+  .hero-cta,
+  .quick-actions,
+  .project-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-wrap,
+  .presence-cards {
+    gap: 6px;
+  }
+
+  .tool-pill {
+    min-height: 60px;
+    font-size: .54rem;
+  }
+
+  .tool-pill b {
+    font-size: .86rem;
+  }
+
+  .presence-card {
+    min-height: 84px;
+  }
+
+  .presence-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .presence-icon svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .presence-icon-text {
+    font-size: 1.75rem;
+  }
+
+  .presence-card strong {
+    font-size: .52rem;
+  }
+}

@@ -1,8 +1,7 @@
 # 💼 Portfólio — Adson Isan
 
-Portfólio profissional voltado a **marketing, negócios e operações digitais**, reunindo projetos, formações, ferramentas e canais de presença profissional.
-
-Desenvolvido em **HTML, CSS e JavaScript**, com foco em apresentação estratégica, responsividade, navegação fluida e experiência visual consistente em modo claro e escuro.
+Meu portfólio profissional em **Marketing Digital, Design Estratégico e Copywriting**, com foco em **performance, estética e resultado real**.  
+Desenvolvido em **HTML, CSS e JavaScript**, para entregar velocidade, SEO técnico e experiência de navegação fluida.  
 
 🔗 **Acesse o portfólio online:**  
 https://o-dynn.github.io/Meu-Portfolio-EMD/
@@ -11,36 +10,33 @@ https://o-dynn.github.io/Meu-Portfolio-EMD/
 
 ## 🧠 Sobre o Portfólio
 
-Este projeto foi criado para apresentar minha atuação de forma clara, organizada e profissional, conectando três pilares principais:
+Este projeto foi criado para reunir e apresentar, de forma clara e visual, minhas principais entregas nas áreas de:
+- **Social Media e Estratégia de Conteúdo**
+- **Copywriting orientado à conversão**
+- **Design Estratégico (UI e comunicação visual)**
+- **Conhecimento em Programação**
+- **Criação de Landing Pages e Sites**
+- **SEO Técnico e On-Page**
 
-- **Marketing Estratégico**
-- **Desenvolvimento de Negócios**
-- **Operações Digitais**
-
-A proposta do portfólio é demonstrar como estratégia, comunicação, processos e tecnologia podem se conectar para transformar objetivos em ações estruturadas, mensuráveis e alinhadas ao crescimento de marcas e projetos digitais.
+A estrutura prioriza **conversão, escaneabilidade e performance**, simulando uma vitrine digital para potenciais contratantes e parceiros.
 
 ---
 
 ## 🚀 Tecnologias e Conceitos Utilizados
-
-- **HTML5** — estrutura semântica e organizada
-- **CSS3** — identidade visual, responsividade e modos claro/escuro
-- **JavaScript** — interações, filtros, carrossel, FAQ e navegação dinâmica
-- **JSON-LD + OpenGraph** — apoio para SEO e compartilhamento em redes sociais
-- **Formulário + WhatsApp** — canais diretos para contato e briefing rápido
+- **HTML5** – Estrutura semântica e otimizada para SEO  
+- **CSS3** – Design responsivo, elegante e consistente entre modos claro/escuro  
+- **JavaScript (ES6)** – Interatividade, animações suaves e filtragem dinâmica  
+- **FormSubmit** – Integração simples e segura de formulários por e-mail  
+- **JSON-LD + OpenGraph** – Otimização para mecanismos de busca e redes sociais  
 
 ---
 
-## 🎨 Principais Recursos
-
-- 🌗 **Modo claro e escuro** com persistência via `localStorage`
-- 📱 **Layout responsivo** para desktop, tablet e mobile
-- 🧩 **Projetos com filtros interativos**
-- ➕ **Botão “ver mais”** para exibição progressiva de projetos
-- 🎓 **Carrossel de formação e certificados**
-- 🛠️ **Seção de ferramentas organizada por fluxo de trabalho**
-- 💬 **FAQ estratégico voltado a marketing e negócios**
-- 📩 **Seção de contato com formulário e integração ao WhatsApp**
+## 🎨 Destaques Técnicos
+- 🌗 **Modo claro/escuro** com persistência via `localStorage`  
+- 🧭 **Menu responsivo** e navegação fluida  
+- 🧩 **Sistema de cards dinâmicos** para exibir projetos e filtros interativos  
+- 💬 **Formulário funcional** para contato direto via e-mail e WhatsApp  
+- 🪄 **Animações suaves** e microinterações com Intersection Observer  
 
 ---
 
@@ -50,9 +46,9 @@ A proposta do portfólio é demonstrar como estratégia, comunicação, processo
 📍 Itapetininga/SP — remoto ou presencial  
 📧 [ads.if2407@gmail.com](mailto:ads.if2407@gmail.com)  
 💬 [WhatsApp](https://wa.me/5515998584798)  
-💼 [LinkedIn](https://www.linkedin.com/in/ads-if2407/)  
-🌐 [Portfólio Online](https://o-dynn.github.io/Meu-Portfolio-EMD/)
+💼 [LinkedIn](https://www.linkedin.com/in/adson-isan-mkt)  
+🌐 [Portfólio Online](https://O-dynn.github.io/)
 
 ---
 
-> Projeto pessoal desenvolvido para apresentar minha atuação em **marketing, negócios, operações digitais e desenvolvimento web**, demonstrando visão estratégica, organização visual e capacidade de execução.
+> 📌 Projeto pessoal para fins profissionais — demonstração de habilidades práticas em **marketing digital**, **design estratégico**, **programação front-end** e **comunicação visual**.
