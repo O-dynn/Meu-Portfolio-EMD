@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículos | Adson Isan</title>
+  <meta name="description" content="Escolha qual currículo baixar: marketing, programação web ou versão geral." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#061226;
+      --bg-2:#071a34;
+      --surface:#0a1c37;
+      --surface-2:#102542;
+      --text:#f4f7ff;
+      --muted:#b8c1d5;
+      --muted-2:#8693ad;
+      --brand:#ffca08;
+      --brand-2:#ffd84f;
+      --border:rgba(160,178,220,.22);
+      --border-strong:rgba(255,202,8,.45);
+      --shadow:0 28px 80px rgba(0,0,0,.35);
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box;}
+
+    html{scroll-behavior:smooth;}
+
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:"Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(920px 520px at 78% 0%, rgba(23,54,104,.30), transparent 62%),
+        radial-gradient(760px 480px at 4% 48%, rgba(16,55,107,.36), transparent 64%),
+        linear-gradient(180deg, #061226 0%, #06162c 46%, #071a34 100%);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    a{color:inherit;text-decoration:none;}
+
+    .page{
+      width:min(var(--max), calc(100% - 48px));
+      min-height:100vh;
+      margin:0 auto;
+      padding:28px 0 40px;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:22px;
+      min-height:58px;
+      margin-bottom:78px;
+    }
+
+    .brand{
+      color:var(--brand);
+      font-size:1.28rem;
+      line-height:1;
+      font-weight:900;
+      letter-spacing:-.035em;
+    }
+
+    .top-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:46px;
+      padding:0 20px;
+      border:1px solid rgba(160,178,220,.24);
+      border-radius:999px;
+      background:rgba(255,255,255,.02);
+      color:rgba(244,247,255,.88);
+      font-size:.92rem;
+      font-weight:800;
+      transition:.2s ease;
+    }
+
+    .top-link:hover{
+      transform:translateY(-2px);
+      border-color:var(--border-strong);
+      color:var(--brand);
+    }
+
+    .hero{
+      max-width:920px;
+      margin:0 auto 48px;
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      margin:0 0 20px;
+      color:var(--brand);
+      font-size:.88rem;
+      line-height:1;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .eyebrow::before{
+      content:"▱";
+      font-size:1.35rem;
+      line-height:1;
+    }
+
+    .title{
+      max-width:850px;
+      margin:0 auto 22px;
+      color:var(--text);
+      font-size:clamp(2.6rem, 5.2vw, 5.1rem);
+      line-height:1.08;
+      letter-spacing:-.065em;
+      font-weight:900;
+    }
+
+    .title span{color:var(--brand);}
+
+    .subtitle{
+      max-width:780px;
+      margin:0 auto;
+      color:rgba(244,247,255,.78);
+      font-size:1.15rem;
+      line-height:1.75;
+      font-weight:500;
+    }
+
+    .cards-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:24px;
+      align-items:stretch;
+      margin-top:10px;
+    }
+
+    .card{
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height:430px;
+      padding:34px 30px 30px;
+      border:1px solid var(--border);
+      border-radius:20px;
+      background:
+        radial-gradient(520px 260px at 100% 0%, rgba(24,63,124,.20), transparent 62%),
+        linear-gradient(180deg, rgba(12,35,70,.58), rgba(6,20,43,.42));
+      box-shadow:0 16px 42px rgba(0,0,0,.18);
+      transition:transform .22s ease, border-color .22s ease, background .22s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:rgba(255,202,8,.44);
+      background:
+        radial-gradient(520px 260px at 100% 0%, rgba(255,202,8,.07), transparent 62%),
+        linear-gradient(180deg, rgba(12,35,70,.70), rgba(6,20,43,.50));
+    }
+
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:auto 30px 0;
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(255,202,8,.45), transparent);
+      opacity:.55;
+    }
+
+    .card-top,
+    .card-body,
+    .card-actions{position:relative;z-index:1;}
+
+    .card-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      margin-bottom:30px;
+    }
+
+    .card-number{
+      color:var(--brand);
+      font-size:2rem;
+      line-height:1;
+      font-weight:900;
+      letter-spacing:-.04em;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:38px;
+      padding:0 15px;
+      border:1px solid rgba(255,202,8,.52);
+      border-radius:999px;
+      background:rgba(255,202,8,.06);
+      color:var(--brand);
+      font-size:.76rem;
+      font-weight:900;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+
+    .card h2{
+      min-height:72px;
+      display:flex;
+      align-items:flex-start;
+      margin:0 0 18px;
+      color:var(--text);
+      font-size:1.6rem;
+      line-height:1.23;
+      letter-spacing:-.045em;
+      font-weight:900;
+    }
+
+    .card-line{
+      display:block;
+      width:42px;
+      height:4px;
+      margin:0 0 28px;
+      border-radius:999px;
+      background:var(--brand);
+    }
+
+    .card p{
+      margin:0;
+      color:rgba(244,247,255,.78);
+      font-size:1.02rem;
+      line-height:1.72;
+      font-weight:500;
+    }
+
+    .card-body{
+      display:flex;
+      flex-direction:column;
+      flex:1;
+    }
+
+    .card-actions{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+      margin-top:30px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      min-height:54px;
+      padding:0 18px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      color:var(--text);
+      font-size:.96rem;
+      font-weight:900;
+      text-align:center;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+
+    .btn:hover{transform:translateY(-2px);border-color:var(--border-strong);}
+
+    .btn.primary{
+      border:0;
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:#071226;
+      box-shadow:0 16px 34px rgba(255,202,8,.18);
+    }
+
+    .btn.secondary{
+      background:rgba(255,255,255,.018);
+      color:rgba(244,247,255,.90);
+    }
+
+    .btn.secondary:hover{color:var(--brand);}
+
+    .bottom-bar{
+      margin-top:38px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .back-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      min-height:58px;
+      padding:0 30px;
+      border:1px solid rgba(160,178,220,.26);
+      border-radius:12px;
+      background:rgba(255,255,255,.018);
+      color:rgba(244,247,255,.92);
+      font-weight:900;
+      transition:.2s ease;
+    }
+
+    .back-link:hover{
+      transform:translateY(-2px);
+      border-color:var(--border-strong);
+      color:var(--brand);
+    }
+
+    .arrow{color:var(--brand);font-size:1.25rem;line-height:1;}
+
+    @media (max-width:980px){
+      .topbar{margin-bottom:54px;}
+      .cards-grid{grid-template-columns:1fr;}
+      .card{min-height:auto;}
+      .card h2{min-height:auto;}
+    }
+
+    @media (max-width:640px){
+      .page{width:min(100% - 32px, var(--max));padding:18px 0 32px;}
+      .topbar{align-items:flex-start;flex-direction:column;margin-bottom:46px;}
+      .top-link{width:100%;}
+      .hero{text-align:left;margin-bottom:34px;}
+      .eyebrow{justify-content:flex-start;}
+      .title{font-size:clamp(2.25rem, 11vw, 3.1rem);}
+      .subtitle{font-size:1rem;}
+      .card{padding:26px 22px;border-radius:18px;}
+      .card-top{align-items:flex-start;flex-direction:column;margin-bottom:24px;}
+      .back-link{width:100%;}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar" aria-label="Cabeçalho da página">
+      <a class="brand" href="index.html">Adson Isan</a>
+      <a class="top-link" href="index.html">Voltar ao portfólio →</a>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Currículos</p>
+      <h1 class="title">
+        Escolha a versão do <span>currículo ideal</span>
+      </h1>
+      <p class="subtitle">
+        Separei versões diferentes para facilitar sua análise conforme a oportunidade. Você pode visualizar ou baixar a versão geral, a de marketing ou a de programação web.
+      </p>
+    </section>
+
+    <section class="cards-grid" aria-label="Versões de currículo disponíveis">
+      <article class="card">
+        <div class="card-top">
+          <strong class="card-number">01</strong>
+          <span class="badge">Visão completa</span>
+        </div>
+
+        <div class="card-body">
+          <h2>Soluções Digitais</h2>
+          <span class="card-line"></span>
+          <p>
+            Uma versão mais ampla do meu perfil, reunindo marketing, negócios, design estratégico e programação web em uma apresentação única e equilibrada.
+          </p>
+        </div>
+
+        <div class="card-actions">
+          <a class="btn primary" href="Currículo - Soluções Digitais.pdf" target="_blank" rel="noopener">Visualizar currículo →</a>
+          <a class="btn secondary" href="Currículo - Soluções Digitais.pdf" download>Baixar PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <strong class="card-number">02</strong>
+          <span class="badge">Marketing</span>
+        </div>
+
+        <div class="card-body">
+          <h2>Marketing e Comunicação</h2>
+          <span class="card-line"></span>
+          <p>
+            Versão direcionada para estratégia de marketing digital, conteúdo, copywriting, SEO, social media, campanhas e comunicação com foco em resultados.
+          </p>
+        </div>
+
+        <div class="card-actions">
+          <a class="btn primary" href="Currículo - Marketing Digital.pdf" target="_blank" rel="noopener">Visualizar currículo →</a>
+          <a class="btn secondary" href="Currículo - Marketing Digital.pdf" download>Baixar PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <strong class="card-number">03</strong>
+          <span class="badge">Negócios</span>
+        </div>
+
+        <div class="card-body">
+          <h2>Corporativo e Comercial</h2>
+          <span class="card-line"></span>
+          <p>
+            Versão pensada para o corporativo, com ênfase em admnistração, gestão, produtividade e construção de processos com resultado.
+          </p>
+        </div>
+
+        <div class="card-actions">
+          <a class="btn primary" href="Currículo - Corporativo.pdf" target="_blank" rel="noopener">Visualizar currículo →</a>
+          <a class="btn secondary" href="Currículo - Corporativo.pdf" download>Baixar PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <div class="bottom-bar">
+      <a class="back-link" href="index.html">
+        <span class="arrow">←</span>
+        <span>Voltar ao portfólio</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
