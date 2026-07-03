@@ -72,7 +72,7 @@ Mais do que apresentar trabalhos realizados, este projeto demonstra minha capaci
 
 **Adson Isan**
 
-📍 Itapetininga — SP (Brasil)
+📍 Brasil
 
 📧 [ads.if2407@gmail.com](mailto:ads.if2407@gmail.com)
 
