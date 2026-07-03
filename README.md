@@ -1,8 +1,8 @@
 # 💼 Portfólio — Adson Isan
 
-Repositório do meu portfólio profissional, desenvolvido para apresentar minha trajetória, projetos, certificações, ferramentas, produtos digitais e áreas de atuação.
+Repositório do meu portfólio profissional, desenvolvido para apresentar minha trajetória, projetos, certificações, ferramentas, e áreas de atuação.
 
-O objetivo do projeto é reunir, em um único ambiente, meu trabalho nas áreas de **Marketing Digital, Programação Web, Design Estratégico, SEO, Copywriting e Inteligência Artificial**, permitindo que recrutadores, clientes e parceiros conheçam minha experiência de forma organizada e interativa.
+O objetivo do projeto é reunir, em um único ambiente, meu trabalho nas áreas de **Marketing Digital, Negócios, Programação Web, Design etc**, permitindo que recrutadores, clientes e parceiros conheçam minha experiência de forma organizada e interativa.
 
 🔗 **Acesse o portfólio:**
 https://o-dynn.github.io/Meu-Portfolio-EMD/
@@ -57,7 +57,6 @@ Entre os conteúdos apresentados estão:
 * 📁 Projetos
 * 🛠 Ferramentas
 * 🏆 Certificados
-* 📚 Produtos Digitais
 * 📄 Currículo
 * 📞 Contato
 
