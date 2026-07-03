@@ -1,90 +1,54 @@
 # 💼 Portfólio — Adson Isan
 
-Repositório do meu portfólio profissional, desenvolvido para apresentar minha trajetória, projetos, certificações, ferramentas, e áreas de atuação.
+Meu portfólio profissional em **Marketing Digital, Design Estratégico e Copywriting**, com foco em **performance, estética e resultado real**.  
+Desenvolvido em **HTML, CSS e JavaScript**, para entregar velocidade, SEO técnico e experiência de navegação fluida.  
 
-O objetivo do projeto é reunir, em um único ambiente, meu trabalho nas áreas de **Marketing Digital, Negócios, Programação Web, Design etc**, permitindo que recrutadores, clientes e parceiros conheçam minha experiência de forma organizada e interativa.
-
-🔗 **Acesse o portfólio:**
+🔗 **Acesse o portfólio online:**  
 https://o-dynn.github.io/Meu-Portfolio-EMD/
 
 ---
 
-# 📖 Sobre o Projeto
+## 🧠 Sobre o Portfólio
 
-O portfólio foi desenvolvido como uma aplicação web estática, priorizando organização, navegação intuitiva e apresentação visual das minhas competências profissionais.
+Este projeto foi criado para reunir e apresentar, de forma clara e visual, minhas principais entregas nas áreas de:
+- **Social Media e Estratégia de Conteúdo**
+- **Copywriting orientado à conversão**
+- **Design Estratégico (UI e comunicação visual)**
+- **Conhecimento em Programação**
+- **Criação de Landing Pages e Sites**
+- **SEO Técnico e On-Page**
 
-Entre os conteúdos apresentados estão:
-
-* Apresentação profissional
-* Áreas de atuação
-* Projetos organizados por categoria
-* Ferramentas e tecnologias utilizadas
-* Certificados
-* Produtos digitais
-* Currículo para download
-* Formulário de contato
+A estrutura prioriza **conversão, escaneabilidade e performance**, simulando uma vitrine digital para potenciais contratantes e parceiros.
 
 ---
 
-# 🚀 Tecnologias Utilizadas
-
-* HTML5
-* CSS3
-* JavaScript
-* GitHub Pages
-
----
-
-# ✨ Funcionalidades
-
-* Interface responsiva
-* Modo claro e escuro
-* Navegação por seções
-* Filtros para projetos
-* Cards interativos
-* Download do currículo
-* Links para redes profissionais
-* Formulário de contato
-* Integração com WhatsApp
+## 🚀 Tecnologias e Conceitos Utilizados
+- **HTML5** – Estrutura semântica e otimizada para SEO  
+- **CSS3** – Design responsivo, elegante e consistente entre modos claro/escuro  
+- **JavaScript (ES6)** – Interatividade, animações suaves e filtragem dinâmica  
+- **FormSubmit** – Integração simples e segura de formulários por e-mail  
+- **JSON-LD + OpenGraph** – Otimização para mecanismos de busca e redes sociais  
 
 ---
 
-# 📂 Estrutura do Portfólio
-
-* 🏠 Início
-* 👨‍💻 Sobre
-* 🚀 Áreas de Atuação
-* 📁 Projetos
-* 🛠 Ferramentas
-* 🏆 Certificados
-* 📄 Currículo
-* 📞 Contato
+## 🎨 Destaques Técnicos
+- 🌗 **Modo claro/escuro** com persistência via `localStorage`  
+- 🧭 **Menu responsivo** e navegação fluida  
+- 🧩 **Sistema de cards dinâmicos** para exibir projetos e filtros interativos  
+- 💬 **Formulário funcional** para contato direto via e-mail e WhatsApp  
+- 🪄 **Animações suaves** e microinterações com Intersection Observer  
 
 ---
 
-# 🎯 Objetivo
+## 🧑‍💻 Autor
 
-Mais do que apresentar trabalhos realizados, este projeto demonstra minha capacidade de desenvolver soluções digitais completas, integrando comunicação, estratégia, design e desenvolvimento web em um único ambiente.
-
----
-
-# 👤 Autor
-
-**Adson Isan**
-
-📍 Brasil
-
-📧 [ads.if2407@gmail.com](mailto:ads.if2407@gmail.com)
-
-💬 WhatsApp
-https://wa.me/5515998584798
-
-💼 LinkedIn
-https://www.linkedin.com/in/adson-isan-mkt
-
-🌐 Portfólio Online
-https://o-dynn.github.io/Meu-Portfolio-EMD/
+**Adson Isan**  
+📍 Itapetininga/SP — remoto ou presencial  
+📧 [ads.if2407@gmail.com](mailto:ads.if2407@gmail.com)  
+💬 [WhatsApp](https://wa.me/5515998584798)  
+💼 [LinkedIn](https://www.linkedin.com/in/adson-isan-mkt)  
+🌐 [Portfólio Online](https://O-dynn.github.io/)
 
 ---
 
-> Projeto desenvolvido para representar minha identidade profissional e reunir, em um único lugar, minhas principais competências, projetos e experiências.
+> 📌 Projeto pessoal para fins profissionais — demonstração de habilidades práticas em **marketing digital**, **design estratégico**, **programação front-end** e **comunicação visual**.
