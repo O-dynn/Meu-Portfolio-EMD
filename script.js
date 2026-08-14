@@ -35,7 +35,7 @@ function updateThemeMeta() {
 
   themeMeta.setAttribute(
     "content",
-    root.classList.contains("light") ? "#f6f8fc" : "#06152b"
+    root.classList.contains("light") ? "#f7f7f3" : "#09090c"
   );
 }
 
@@ -125,8 +125,6 @@ window.addEventListener("resize", () => {
 /* ========================================================= */
 /* BOTÃO VOLTAR AO TOPO */
 /* ========================================================= */
-/* O botão flutuante foi removido do HTML. Este bloco fica seguro caso
-   você decida recolocar um elemento com id="toTopBtn" no futuro. */
 
 const topBtn = document.getElementById("toTopBtn");
 
@@ -222,24 +220,24 @@ function createElement(tag, className, html) {
 
 const faqItems = [
   {
-    question: "Você atua apenas com marketing ou também participa da execução?",
+    question: "Você fica só na estratégia ou também participa da execução?",
     answer:
-      "Meu trabalho vai além do planejamento. Atuo desde a definição da estratégia até a organização e execução de projetos, estruturando processos, conteúdos, páginas, campanhas e operações digitais de acordo com os objetivos do negócio."
+      "Participo dos dois lados. Posso entrar no planejamento, organizar a comunicação e também colocar o projeto em movimento — criando conteúdos, páginas, campanhas, materiais e estruturas digitais de acordo com o que fizer sentido para o objetivo."
   },
   {
-    question: "Que tipos de projetos você desenvolve?",
+    question: "Que tipo de projeto faz sentido desenvolver comigo?",
     answer:
-      "Desenvolvo projetos voltados ao crescimento digital de empresas e profissionais, como sites institucionais, landing pages, identidade digital, estratégias de marketing, estruturação de processos, conteúdos, produtos digitais e materiais para captação e conversão."
+      "Projetos que conectam marketing, comunicação e construção digital. Isso pode envolver posicionamento, campanhas, social media, conteúdo, landing pages, sites, produtos digitais, materiais de captação ou a organização de uma presença digital mais completa."
   },
   {
-    question: "Como funciona o processo de trabalho?",
+    question: "Como você costuma organizar um projeto?",
     answer:
-      "Cada projeto começa com um diagnóstico para entender o cenário, os objetivos e as oportunidades. A partir disso, estruturo uma estratégia personalizada, organizo a execução e acompanho os resultados para garantir que as ações façam sentido para o negócio."
+      "Primeiro entendo o cenário, o objetivo e o que realmente precisa ser resolvido. Depois estruturo prioridades, defino a direção e avanço para a execução. A ideia é evitar fazer por fazer: cada entrega precisa ter uma função dentro do projeto."
   },
   {
-    question: "Você atende projetos pontuais ou parcerias recorrentes?",
+    question: "Você trabalha com projetos pontuais ou acompanhamento contínuo?",
     answer:
-      "Os dois modelos. Posso atuar em projetos específicos, como o desenvolvimento de um site ou campanha, ou acompanhar empresas de forma contínua, auxiliando na evolução das estratégias, processos e presença digital."
+      "Com os dois formatos. Posso participar de uma entrega específica, como uma página, campanha ou projeto de conteúdo, ou acompanhar uma operação de forma recorrente, contribuindo com estratégia, comunicação, organização e evolução digital."
   }
 ];
 
@@ -250,13 +248,31 @@ function renderFAQ() {
 
   faqGrid.innerHTML = "";
 
-  faqItems.forEach(({ question, answer }) => {
-    const details = createElement("details", "reveal");
-    const summary = createElement("summary", null, question);
+  faqItems.forEach(({ question, answer }, index) => {
+    const details = createElement("details", "faq-item reveal");
+    const summary = createElement("summary", "faq-question");
+    const number = createElement("span", "faq-number", String(index + 1).padStart(2, "0"));
+    const title = createElement("span", "faq-question-text", question);
+    const toggle = createElement("span", "faq-toggle", '<span aria-hidden="true"></span>');
+    const answerWrap = createElement("div", "faq-answer");
     const paragraph = createElement("p", null, answer);
 
+    toggle.setAttribute("aria-hidden", "true");
+
+    summary.appendChild(number);
+    summary.appendChild(title);
+    summary.appendChild(toggle);
+    answerWrap.appendChild(paragraph);
     details.appendChild(summary);
-    details.appendChild(paragraph);
+    details.appendChild(answerWrap);
+
+    details.addEventListener("toggle", () => {
+      if (!details.open) return;
+
+      faqGrid.querySelectorAll("details[open]").forEach((item) => {
+        if (item !== details) item.open = false;
+      });
+    });
 
     faqGrid.appendChild(details);
     observeReveal(details);
@@ -295,6 +311,19 @@ renderFAQ();
 /* ========================================================= */
 
 const projects = [
+    {
+    title: "Sr. Marketing - Branding e Social Media",
+    type: "Marketing Estratégico",
+    areas: ["Branding", "Conteúdo"],
+    objective:
+      "Criar uma landing page simples, para permitir o acesso a um e-book",
+    solution:
+      "Desenvolvimento de conceito de marca, estratégia para Instagram, público e persona, organização editorial e aplicação visual dos posts.",
+    tags: ["Marketing Estratégico", "Social Media"],
+    image: "lp-meta2.png",
+    link: "https://o-dynn.github.io/META-2-E-BOOK/",
+    repo: "https://o-dynn.github.io/META-2-E-BOOK/"
+  },
   {
     title: "Sr. Marketing - Branding e Social Media",
     type: "Marketing Estratégico",
@@ -349,8 +378,8 @@ const projects = [
   },
   {
     title: "Brisa Café — Website de Cafeteria Artesanal",
-    type: "Operações Digitais",
-    areas: ["Marketing Estratégico", "Branding"],
+    type: "Negócios",
+    areas: ["Marketing", "Branding"],
     objective:
       "Apresentar habilidades de design, SEO e desenvolvimento web aplicadas a um negócio local.",
     solution:
@@ -362,13 +391,13 @@ const projects = [
   },
   {
     title: "Curso Intensivo de Excel — Landing Page",
-    type: "Operações Digitais",
-    areas: ["Marketing Estratégico", "Produtos Digitais"],
+    type: "Produtos Digitais",
+    areas: ["Marketing", "Landing Page"],
     objective:
       "Criar uma landing page para promover um curso intensivo de Excel, priorizando conversão e clareza na comunicação.",
     solution:
       "Desenvolvimento em HTML, CSS e JavaScript com foco em copywriting, SEO básico, performance e design estratégico.",
-    tags: ["Landing Page", "Copywriting"],
+    tags: ["Copywriting", "Programação"],
     image: "lp-curso-excel.png",
     link: "https://o-dynn.github.io/lp-curso-excel/",
     repo: "https://github.com/O-dynn/lp-curso-excel"
