@@ -859,3 +859,44 @@ const yearElement = document.getElementById("year");
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
+
+quickForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const submitButton = quickForm.querySelector('button[type="submit"]');
+
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.textContent = "Enviando...";
+  }
+
+
+  
+
+  try {
+    const formData = new FormData(quickForm);
+
+    const response = await fetch(quickForm.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro no envio");
+    }
+
+    quickForm.reset();
+
+    alert("Mensagem enviada com sucesso! Recebi seu contato e responderei assim que possível.");
+  } catch (error) {
+    alert("Não foi possível enviar sua mensagem. Tente novamente em alguns instantes.");
+  } finally {
+    if (submitButton) {
+      submitButton.disabled = false;
+      submitButton.textContent = "Enviar mensagem";
+    }
+  }
+});
