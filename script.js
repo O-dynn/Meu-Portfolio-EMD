@@ -312,14 +312,27 @@ renderFAQ();
 
 const projects = [
     {
-    title: "Sr. Marketing - Branding e Social Media",
+      title: "Lopes Nobre — Identidade e Comunicação",
+      type: "Marketing Estratégico",
+      areas: ["Comunicação", "Conteúdo"],
+      objective:
+        "Estruturar o marketing e a comunicação da imobiliária, organizando sua presença digital, identidade visual, canais e produção de conteúdo.",
+      solution:
+        "Consultoria de marketing com desenvolvimento de social media, materiais promocionais, produção e edição audiovisual, criação de canais, cobertura de eventos e treinamento da equipe para captação de imagens.",
+      tags: ["Marketing Estratégico", "Social Media"],
+      image: "lopes.png",
+      link: "https://o-dynn.github.io/lopes-nobre/",
+      repo: "https://github.com/O-dynn/lopes-nobre/"
+    },
+    {
+    title: "META 2 - Branding e E-book",
     type: "Marketing Estratégico",
     areas: ["Branding", "Conteúdo"],
     objective:
       "Criar uma landing page simples, para permitir o acesso a um e-book",
     solution:
       "Desenvolvimento de conceito de marca, estratégia para Instagram, público e persona, organização editorial e aplicação visual dos posts.",
-    tags: ["Marketing Estratégico", "Social Media"],
+    tags: ["Marketing Estratégico", "Produtos Digitais"],
     image: "lp-meta2.png",
     link: "https://o-dynn.github.io/META-2-E-BOOK/",
     repo: "https://o-dynn.github.io/META-2-E-BOOK/"
